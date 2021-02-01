@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="style.css">
+ -->
+ <style type="text/css">
+ 		* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0C374D;
+}
+
+#navbar {
+    width: 100%;
+    background: brown;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    /*animation-name: nav;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: all;
+    animation-direction: alternate;*/
+}
+
+#navbar a {
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.66%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    background-color: rgb(119, 65, 65);
+    border-radius: 15px;
+    color: black;
+}
+
+#main {
+    width: 50%;
+    margin: 40px auto 140px;
+}
+
+span {
+    color: white;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    color: #BCA136;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+th,
+td {
+    border: solid 1px black;
+    margin: 20px auto;
+    font-size: 120%;
+    border-collapse: collapse;
+    border-color: black;
+    border-width: 1px;
+}
+
+th {
+    padding: 10px;
+    border-color: rgb(165, 104, 104);
+    border: solid 3px black;
+    color: rgb(29, 22, 22);
+}
+
+table {
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    border: solid 2px black;
+    margin: auto;
+    text-indent: initial;
+    border-spacing: 1px;
+    box-sizing: border-box;
+    border-width: 1.5px;
+}
+
+tr:nth-child(odd) {
+    background-color: #829356;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #B5C686;
+    color: white;
+}
+
+tr:nth-child(1) {
+    color: black;
+}
+
+#India td {
+    background-color: #28560d;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+#more {
+    margin: 80px auto 100px;
+    display: block;
+    font-size: 21px;
+    border: none;
+    padding: 14px 54px;
+    background-color: #bca136;
+    color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-color: green;
+}
+
+#more:hover {
+    background-color: #C02F1D;
+    color: white;
+}
+
+@keyframes nav {
+    0% {
+        background-color: black;
+        color: white;
+    }
+    25% {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+footer {
+    background: rgba(0,0,0,0.87);
+    text-align: center;
+    padding: 18px;
+    color: #584848;
+    font-style: normal;
+    font-weight: bolder;
+    text-shadow: #28560d;
+}
+ </style>
+<body>
+
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="#">Health Topics</a>
+        <a href="#">Emergencies</a>
+        <a href="#">News Room</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+        <h1>What is Covid-19 ?</h1>
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.
+            Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. The best way to prevent and slow down transmission is be well
+            informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. The COVID-19 virus spreads primarily
+            through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow). </p>
+        <br>
+        <h2>Covid World-o-Meter</h2>
+        <table>
+            <tr>
+                <div id="tr1">
+                    <th>Country</th>
+                    <th>Total Cases</th>
+                    <th>Active Cases</th>
+                    <th>Total Deaths</th>
+                    <th>Total Recovered</th>
+                </div>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>2,330,578</td>
+                <td>1,235,657</td>
+                <td>121,980</td>
+                <td>972,941</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>1,070,139</td>
+                <td>476,895</td>
+                <td>50,058</td>
+                <td>543,186</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>576,952</td>
+                <td>234,358</td>
+                <td>8,002</td>
+                <td>334,592</td>
+            </tr>
+            <tr id="India">
+                <td>India</td>
+                <td>411,773</td>
+                <td>170,185</td>
+                <td>13,281</td>
+                <td>228,307</td>
+            </tr>
+            <tr>
+                <td>UK</td>
+                <td>303,110</td>
+                <td>N/A</td>
+                <td>42,589</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+        <br>
+        <h2>Covid In India</h2>
+        <img src="covid3.jpg" alt="Covid-19">
+        <p>India crossed <span>4 lakh,10 thousand</span> novel coronavirus cases today on a day the country reported over <span>15,000 cases</span>, in its steepest one-day jump. The total number of cases is now <span>411,773</span> and the number of deaths
+            linked to the contagion is close to 13,000. India has the world's <span>fourth highest number</span> behind the United States, Brazil and Russia. Data from state health departments show an increase of over 5,000 cases just this evening - India's
+            coronavirus tally was 3.95 lakh cases in the morning. Over 12,900 patients have died due to the deadly virus in the country since the beginning of the pandemic. The country's recovery rate stood at 54.12 per cent this morning.
+        </p>
+    </div>
+    <input type="button" value="Read More" id="more">
+    <footer>&copy; About Privacy Policy 2020-2021 - Bhagalpur, Bihar - 813204 - Contact : +91-7766856390 email: isauravshing@gmail.com
+    </footer>
+</body>
+
+</html>
